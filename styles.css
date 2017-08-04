@@ -1,0 +1,165 @@
+﻿<style type="text/css">
+* {
+  margin: 0px;
+  padding: 0px;
+  
+}
+html {
+  background: url("http://www.slotsumo.com/wp-content/uploads/2015/03/jeopardy_slot_bg.jpg") no-repeat center fixed;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+body {
+  color: white;
+  text-align: center; 
+  font-family:"ITCKorinnaW01-Regular", "Arial Black";
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase; 
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  align-content: center;
+}
+#logo {
+  width: 60%;
+  margin: auto;
+  padding: 2%;
+  display: block;
+  min-width: 10em;
+  margin-bottom: 0;
+}
+/*#startform {
+  position:static;
+  bottom: 50%;
+  left: 25%;
+  right: 25%;
+  margin: auto;
+  margin-bottom: 25%;
+  width: 50%;
+}*/
+/*#startbuttons {
+  width: 50% 50%;
+  margin: auto;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
+}*/
+.form {  
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.submit {
+  font-family: "Swiss911W01-ExtraCompressed";
+  color: #ffcb2f;
+  font-size: 5vw;
+  background-color: Blue;
+  border-color: #262626;
+  border-width: .5vw;
+  border-style: outset;
+  padding: 5px 10px;
+  padding: auto;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  margin: auto;  
+  margin-top: 0;
+  width: 100%;
+  max-width: 25em;
+  flex: 1 100% 100%;
+  display: block;
+}
+.submit:hover {
+  outline: 2px solid #ffcb2f;
+  outline-offset: -5px;
+}
+.submit:active {
+  border-style: inset;
+  border-color: #262626;
+  outline: 1px solid #ffcb2f;
+  outline-offset: -5px;
+}
+.infoinput {
+  background:blue;
+  color: white;
+  font-family: "SF Foxboro Script Extended", "Comic Sans MS";
+  font-size: 4vw;
+  text-align: center;
+  outline: .5vw ridge silver;
+}
+.infolabel {
+  font-size: 4vw;
+}
+
+.infoinput, .infolabel, .checkbox {
+  margin: auto;
+  display: block;
+}
+.checkbox {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  -webkit-appearance: none;
+  height: 5.5vw;
+  width: 5.5vw;
+  border: .5vw ridge silver;
+  outline: none;
+  display: flex;
+}
+.checkbox:checked {
+  content: url(http://www.clker.com/cliparts/2/k/n/l/C/Q/transparent-green-checkmark-hi.png);
+  height: 5.5vw;
+  width: 5.5vw;
+  padding: 0px;
+}
+#roomcode {
+  text-transform: uppercase;
+}
+@media all and (max-width: 650px) {
+  .submit {
+    font-size: 35px;
+  }
+}
+@media all and (max-width: 650px) {
+  .infolabel, .infoinput {
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 650px) {
+  .checkbox, .checkbox:checked {
+    font-size: 35px;
+    width: 40px;
+    height: 40px;
+  }
+}
+@import {
+  url(http://db.onlinewebfonts.com/c/871fe0d078853d778f22b83af5c27159?family=ITCKorinnaW01-Regular);
+  url(http://db.onlinewebfonts.com/c/168cb827a28ad8dceaeadb1f36af0693?family=Swiss911W01-ExtraCompressed);
+  url(http://db.onlinewebfonts.com/c/d056a2941cd0a155536c7e8969c6b793?family=SF+Foxboro+Script+Extended);
+}
+
+@font-face {
+  font-family: "ITCKorinnaW01-Regular";
+  src: url("http://db.onlinewebfonts.com/t/871fe0d078853d778f22b83af5c27159.eot");
+  src: url("http://db.onlinewebfonts.com/t/871fe0d078853d778f22b83af5c27159.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/871fe0d078853d778f22b83af5c27159.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/871fe0d078853d778f22b83af5c27159.woff") format("woff"), url("http://db.onlinewebfonts.com/t/871fe0d078853d778f22b83af5c27159.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/871fe0d078853d778f22b83af5c27159.svg#ITCKorinnaW01-Regular") format("svg");
+}
+@font-face {
+  font-family: "Swiss911W01-ExtraCompressed";
+  src: url("http://db.onlinewebfonts.com/t/168cb827a28ad8dceaeadb1f36af0693.eot");
+  src: url("http://db.onlinewebfonts.com/t/168cb827a28ad8dceaeadb1f36af0693.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/168cb827a28ad8dceaeadb1f36af0693.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/168cb827a28ad8dceaeadb1f36af0693.woff") format("woff"), url("http://db.onlinewebfonts.com/t/168cb827a28ad8dceaeadb1f36af0693.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/168cb827a28ad8dceaeadb1f36af0693.svg#Swiss911W01-ExtraCompressed") format("svg");
+}
+@font-face {font-family: "SF Foxboro Script Extended";
+    src: url("http://db.onlinewebfonts.com/t/d056a2941cd0a155536c7e8969c6b793.eot");
+    src: url("http://db.onlinewebfonts.com/t/d056a2941cd0a155536c7e8969c6b793.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/d056a2941cd0a155536c7e8969c6b793.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/d056a2941cd0a155536c7e8969c6b793.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/d056a2941cd0a155536c7e8969c6b793.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/d056a2941cd0a155536c7e8969c6b793.svg#SF Foxboro Script Extended") format("svg");
+}

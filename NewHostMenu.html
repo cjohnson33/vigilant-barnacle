@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Jeopardy!</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="file:///D:/cmjoh/Documents/Jeopardy!%20Project/newstyles.css"/>
+</head>
+
+<body>
+  <div class="mainmenu">
+    <div class="logo">JEOPARDY!</div>
+    <div class="menu menuitem">
+      <div class="menuitem regtext">Roomcode: "ROOM#"</div>
+      <ol class="menuitem playerlist regtext">
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+        <li class="listitem">Player 1</li>
+      </ol>
+      <form class="menuitem regtext" id="gmform">
+        <div class="menuitem" id="radio1" onclick="check1()" >
+          <input type="radio" name="gamemode" id="gamemode1" class="menuitem game" />
+          <label for="gamemode" class="menuitem gamelabel"> Include clues from between
+            <input type="number" min="1984" max="2017" class="date" /> and 
+            <input type="number" min="1984" max="2017" class="date" /> <br>
+          </label>
+        </div>
+        <div>or</div>
+        <div class="menuitem" id="radio2" onclick="check2()">
+          <input type="radio" name="gamemode" id="gamemode2" class="menuitem game" />
+          <label for="gamemode" class="menuitem gamelabel">
+            <input type="date" class="date" />
+          </label>
+        </div>
+      </form>
+      <input type="submit" value="START GAME" class="menuitem" />
+    </div>
+  </div>
+</body>
+
+<script rel=text/javascript src="/static/jquery.js"></script>
+<script rel=text/javascript src="/static/socket.io.js"></script>
+<script>
+function check1() {
+  document.getElementById("gamemode1").checked = true
+  document.getElementById("gamemode2").checked = false
+  document.getElementById("radio1").style.outline = ".3vmax solid gold"
+  document.getElementById("radio1").style.outlineOffset = ".5vmax"
+  document.getElementById("radio2").style.outline = "none"
+}
+function check2() {
+  document.getElementById("gamemode2").checked = true
+  document.getElementById("gamemode1").checked = false
+  document.getElementById("radio2").style.outline = ".3vmax solid gold"
+  document.getElementById("radio2").style.outlineOffset = ".5vmax"
+  document.getElementById("radio1").style.outline = "none"
+}
+</script>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Jeopardy!</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial=-scale=" />
+  <link rel="stylesheet" type="text/css" href="D:\cmjoh\Documents\Jeopardy! Project\styles.css"/>
+    <link href="//db.onlinewebfonts.com/c/871fe0d078853d778f22b83af5c27159?family=ITCKorinnaW01-Regular" rel="stylesheet" type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/168cb827a28ad8dceaeadb1f36af0693?family=Swiss911W01-ExtraCompressed" rel="stylesheet" type="text/css" />
+</head>
+
+<body class=menu>
+  <div class=form>
+    <form action="/lobby" method=get>
+    <!-- This should likely be validated -->
+      <label for=room_code class=infolabel >ROOM CODE:</label>
+      <input type=text name=room_code class=infoinput autocomplete=off maxlength=5 id=roomcode />
+      <label for=name class=infolabel>NAME:</label>
+      <input type=text name=name class=infoinput autocomplete=off />
+      <label for=host class=infolabel>HOST?</label>
+      <input type=checkbox name=host class=checkbox id=host />
+      <input type=submit value="WHAT IS JOIN?" class="submit" />
+    </form>
+  </div>
+</body>
+
+<script rel=text/javascript src="/static/jquery.js"></script>
+<script rel=text/javascript src="/static/socket.io.js"></script>
+
+</html>
