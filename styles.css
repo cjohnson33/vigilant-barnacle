@@ -2,7 +2,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  
+
 }
 html {
   background: url("http://www.slotsumo.com/wp-content/uploads/2015/03/jeopardy_slot_bg.jpg") no-repeat center fixed;
@@ -11,10 +11,10 @@ html {
 }
 body {
   color: white;
-  text-align: center; 
+  text-align: center;
   font-family:"ITCKorinnaW01-Regular", "Arial Black";
   text-shadow: 2px 2px 2px black;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   position: fixed;
   width: 100%;
   top: 0%;
@@ -49,7 +49,7 @@ body {
   margin-right: 25%;
   margin-top: 10%;
 }*/
-.form {  
+.form {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,7 @@ body {
   border-radius: 2px;
   cursor: pointer;
   outline: none;
-  margin: auto;  
+  margin: auto;
   margin-top: 0;
   width: 100%;
   max-width: 25em;
